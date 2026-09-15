@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WJC Inova — Guia de Fotos e Imagens do Site</title>
+<style>
+  :root{
+    --navy-950:#07101f; --navy-900:#0b1b33; --navy-700:#1c3355;
+    --gold:#d9b968; --gold-light:#e7ce93;
+    --ivory:#f7f4ec; --mist:#b8c3d4; --ink:#152238;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--ivory);color:var(--ink);line-height:1.6}
+  .page{max-width:860px;margin:0 auto;padding:0 24px}
+
+  /* Cabeçalho */
+  header{background:var(--navy-950);color:var(--ivory);padding:56px 0 48px;border-bottom:4px solid var(--gold)}
+  .brand{font-size:13px;letter-spacing:.45em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  h1{font-weight:400;font-size:clamp(30px,5vw,44px);line-height:1.15}
+  header p.sub{margin-top:16px;max-width:600px;color:var(--mist);font-family:'Segoe UI',Arial,sans-serif;font-size:15px}
+
+  section{padding:40px 0 8px}
+  .kicker{font-family:'Segoe UI',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:#a07c1e;margin-bottom:10px;display:flex;align-items:center;gap:12px}
+  .kicker::before{content:"";display:inline-block;width:28px;height:2px;background:var(--gold)}
+  h2{font-size:26px;font-weight:400;margin-bottom:14px}
+
+  p,li{font-family:'Segoe UI',Arial,sans-serif;font-size:15px}
+
+  /* Cards */
+  .card{background:#fff;border:1px solid #e3ddcd;border-left:4px solid var(--navy-900);border-radius:6px;padding:22px 24px;margin-bottom:18px;box-shadow:0 1px 3px rgba(7,16,31,.06)}
+  .card h3{font-size:19px;font-weight:400;margin-bottom:4px}
+  .card h3 .num{color:#a07c1e;font-size:15px;margin-right:8px}
+  .onde{font-family:'Segoe UI',Arial,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.15em;color:#7a8699;margin-bottom:10px}
+  .specs{list-style:none;margin:10px 0 0}
+  .specs li{padding:5px 0 5px 24px;position:relative;border-top:1px dashed #eee7d6;font-size:14px}
+  .specs li::before{content:"→";position:absolute;left:2px;color:var(--gold);font-weight:bold}
+  .tag{display:inline-block;background:var(--navy-900);color:var(--gold-light);font-family:'Segoe UI',Arial,sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:99px;margin-left:8px;vertical-align:middle}
+  .tag.op{background:#fff;color:#a07c1e;border:1px solid var(--gold)}
+
+  /* Tabelas */
+  table{width:100%;border-collapse:collapse;margin:14px 0 20px;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(7,16,31,.06)}
+  th{background:var(--navy-900);color:var(--gold-light);font-family:'Segoe UI',Arial,sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;text-align:left;padding:11px 14px}
+  td{padding:11px 14px;border-top:1px solid #eee7d6;font-family:'Segoe UI',Arial,sans-serif;font-size:14px;vertical-align:top}
+  td b{color:var(--navy-900)}
+
+  .dica{background:#fdf9ee;border:1px solid #ecd9a0;border-radius:6px;padding:16px 18px;margin:14px 0}
+  .dica strong{color:#8a6a14}
+
+  ul.check{list-style:none;margin:10px 0}
+  ul.check li{padding:6px 0 6px 30px;position:relative}
+  ul.check li::before{content:"✓";position:absolute;left:4px;top:6px;color:#1d7a3f;font-weight:bold}
+
+  ul.no{list-style:none;margin:10px 0}
+  ul.no li{padding:6px 0 6px 30px;position:relative}
+  ul.no li::before{content:"✕";position:absolute;left:4px;top:6px;color:#b03a2e;font-weight:bold}
+
+  code{font-family:Consolas,monospace;background:#efe9da;padding:2px 7px;border-radius:4px;font-size:13px}
+
+  footer{background:var(--navy-950);color:var(--mist);text-align:center;padding:34px 20px;margin-top:56px;font-family:'Segoe UI',Arial,sans-serif;font-size:13px}
+  footer .g{color:var(--gold);letter-spacing:.3em;text-transform:uppercase;font-size:11px;display:block;margin-bottom:8px}
+
+  @media print{
+    body{background:#fff}
+    header{background:var(--navy-950)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .card{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="page">
+    <p class="brand">WJC&nbsp;Inova · Construção &amp; Inovação</p>
+    <h1>Guia de Fotos e Imagens<br>para o seu novo site</h1>
+    <p class="sub">Este documento lista <strong style="color:var(--ivory)">todas as imagens que o site precisa</strong>, onde cada uma aparece e como produzi-las — na maioria dos casos, um celular moderno é suficiente.</p>
+  </div>
+</header>
+
+<div class="page">
+
+<!-- ===================== RESUMO ===================== -->
+<section>
+  <p class="kicker">Visão geral</p>
+  <h2>O que vamos precisar</h2>
+  <table>
+    <tr><th>Categoria</th><th>Quantidade</th><th>Prioridade</th></tr>
+    <tr><td><b>Logotipo oficial</b> + ícone (favicon)</td><td>1 + 1</td><td>Essencial</td></tr>
+    <tr><td>Foto principal de abertura (Hero)</td><td>1</td><td>Essencial</td></tr>
+    <tr><td>Fotos institucionais ("Quem somos")</td><td>2</td><td>Essencial</td></tr>
+    <tr><td>Fotos dos serviços</td><td>5</td><td>Importante</td></tr>
+    <tr><td>Fotos dos projetos (capa + galeria de cada obra)</td><td>±36 <span style="color:#7a8699">(mín. 3 por projeto)</span></td><td>Essencial</td></tr>
+    <tr><td>Fotos dos clientes (depoimentos)</td><td>3</td><td>Opcional</td></tr>
+    <tr><td>Logos dos parceiros/fornecedores</td><td>6</td><td>Opcional</td></tr>
+    <tr><td>Capas dos artigos do blog</td><td>3</td><td>Pode ficar para depois</td></tr>
+  </table>
+  <p>Total recomendado: <b>cerca de 55–60 arquivos</b>. O site já está no ar com imagens provisórias da identidade visual — conforme você envia as fotos reais, elas vão substituindo as provisórias pelo painel de administração, sem precisar mexer no código.</p>
+</section>
+
+<!-- ===================== COMO FOTOGRAFAR ===================== -->
+<section>
+  <p class="kicker">Diretrizes gerais</p>
+  <h2>Como tirar as fotos</h2>
+
+  <div class="dica"><strong>Boa notícia:</strong> não é preciso fotógrafo profissional (embora seja bem-vindo). Um celular dos últimos 4–5 anos fotografando na resolução máxima atende perfeitamente. O site aplica automaticamente um tratamento visual azul-marinho sobre as fotos — isso esconde pequenas imperfeições e deixa tudo com a cara da marca.</div>
+
+  <h3 style="margin:18px 0 6px;font-weight:400;font-size:20px">Faça assim ✓</h3>
+  <ul class="check">
+    <li><b>Fotografe na maior resolução possível</b> — nas configurações da câmera, escolha o tamanho grande / HDR ativado.</li>
+    <li><b>Aproveite a luz natural</b> — o melhor horário é de manhã cedo ou no fim da tarde (luz dourada, combina com a identidade do site). Evite meio-dia de sol forte, que estoura as cores.</li>
+    <li><b>Limpe o cenário antes</b> — canteiro varrido, materiais organizados, vidros e pisos limpos. Obra organizada transmite exatamente o que vendemos: método.</li>
+    <li><b>Mantenha o celular nivelado</b> — horizonte reto, sem inclinar. Encoste o celular em algo firme se a mão tremer.</li>
+    <li><b>Varie os enquadramentos</b> — para cada projeto: 1 foto ampla (mostra a obra inteira), 2 médias (fachada, living) e 2–3 closes (detalhe de acabamento, marcenaria, textura).</li>
+    <li><b>Inclua pessoas trabalhando</b> em algumas fotos (equipe com EPI) — passa confiança e humaniza a marca.</li>
+    <li><b>Fotografe na horizontal</b> sempre que possível (de lado, não na vertical).</li>
+  </ul>
+
+  <h3 style="margin:18px 0 6px;font-weight:400;font-size:20px">Evite ✕</h3>
+  <ul class="no">
+    <li>Fotos escuras, noturnas ou com flash.</li>
+    <li>Zoom digital (aproxime-se do objeto em vez de dar zoom).</li>
+    <li>Screenshots, fotos baixadas da internet ou imagens já comprimidas no WhatsApp.</li>
+    <li>Filtros e edições — o site cuida do acabamento visual.</li>
+    <li>Água, poeira, entulho ou ferramentas espalhadas em primeiro plano (a não ser que a foto seja justamente do "canteiro organizado").</li>
+  </ul>
+
+  <h3 style="margin:22px 0 6px;font-weight:400;font-size:20px">Como enviar sem perder qualidade</h3>
+  <table>
+    <tr><th>Forma de envio</th><th>Qualidade</th><th>Observação</th></tr>
+    <tr><td><b>Google Drive / OneDrive / WeTransfer</b></td><td>⭐ Ideal</td><td>Envie os arquivos originais, uma pasta por categoria.</td></tr>
+    <tr><td>E-mail</td><td>Bom</td><td>Anexe poucas por e-mail para não ser compactado.</td></tr>
+    <tr><td>WhatsApp como "Documento" 📎</td><td>Aceitável</td><td>Se for por WhatsApp, envie obrigatoriamente como <b>Documento</b> — nunca como "Foto", que comprime e estraga a imagem.</td></tr>
+  </table>
+
+  <h3 style="margin:22px 0 6px;font-weight:400;font-size:20px">Nomeação dos arquivos</h3>
+  <p>Nomeie os arquivos assim para agilizar a publicação:</p>
+  <p style="margin:10px 0"><code>projeto-nome-da-obra-fachada.jpg</code> &nbsp;·&nbsp; <code>projeto-nome-da-obra-sala.jpg</code> &nbsp;·&nbsp; <code>servico-reformas.jpg</code> &nbsp;·&nbsp; <code>equipe-canteiro.jpg</code></p>
+</section>
+
+<!-- ===================== LISTA DETALHADA ===================== -->
+<section>
+  <p class="kicker">Lista detalhada</p>
+  <h2>Imagem por imagem</h2>
+
+  <!-- MARCA -->
+  <div class="card">
+    <h3><span class="num">01</span>Logotipo oficial <span class="tag">Essencial</span></h3>
+    <p class="onde">Aparece no topo do site (menu), no rodapé e no painel administrativo</p>
+    <ul class="specs">
+      <li><b>O que:</b> logo oficial da WJC Inova, preferencialmente na versão horizontal (nome ao lado do símbolo).</li>
+      <li><b>Formato:</b> PNG com fundo transparente ou SVG. JPG só em último caso.</li>
+      <li><b>Tamanho mínimo:</b> 800 px de largura.</li>
+      <li><b>Detalhe importante:</b> o site tem fundo azul-marinho escuro — se a logo atual for escura, peça ao designer uma versão em branco/dourado para fundo escuro.</li>
+      <li><b>Extra bem-vindo:</b> versão para fundo claro e versão quadrada do símbolo.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3><span class="num">02</span>Ícone / favicon <span class="tag">Essencial</span></h3>
+    <p class="onde">Ícone que aparece na aba do navegador e no atalho do celular</p>
+    <ul class="specs">
+      <li><b>O que:</b> símbolo da marca sozinho (sem texto), legível em tamanho pequeno.</li>
+      <li><b>Formato/tamanho:</b> PNG quadrado, 512 × 512 px.</li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <div class="card">
+    <h3><span class="num">03</span>Foto principal de abertura — Hero <span class="tag">Essencial</span></h3>
+    <p class="onde">Primeira tela do site (a "vitrine") — ocupa quase toda a tela inicial</p>
+    <ul class="specs">
+      <li><b>O que:</b> a obra mais bonita/impressionante da empresa — fachada concluída, área externa com paisagismo ou canteiro impecável em execução.</li>
+      <li><b>Tipo de foto:</b> ampla, horizontal, alta resolução — mínimo 1920 × 1080 px (ideal: 2400 px+ de largura).</li>
+      <li><b>Composição:</b> o texto do site fica sobreposto à ESQUERDA da imagem — então o assunto principal deve estar deslocado para a DIREITA do quadro.</li>
+      <li><b>Dica:</b> foto feita na golden hour (fim de tarde) valoriza muito essa posição.</li>
+    </ul>
+  </div>
+
+  <!-- SOBRE -->
+  <div class="card">
+    <h3><span class="num">04</span>"Quem somos" — Foto 1: equipe no canteiro <span class="tag">Essencial</span></h3>
+    <p class="onde">Seção "Sobre" da página inicial, coluna esquerda</p>
+    <ul class="specs">
+      <li><b>O que:</b> equipe da WJC trabalhando — capacete, colete, conversando ou executando uma etapa visível da obra.</li>
+      <li><b>Tipo de foto:</b> VERTICAL (retrato), proporção 4:5 — mínimo 1200 × 1500 px.</li>
+      <li><b>Dica:</b> pessoas em ação ficam melhores que posando para a câmera.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3><span class="num">05</span>"Quem somos" — Foto 2: detalhe de acabamento <span class="tag">Essencial</span></h3>
+    <p class="onde">Seção "Sobre" da página inicial, coluna direita</p>
+    <ul class="specs">
+      <li><b>O que:</b> close caprichado de um acabamento que a empresa executa bem — marcenaria, revestimento, esquadria de madeira, textura de concreto aparente, bancada.</li>
+      <li><b>Tipo de foto:</b> VERTICAL (retrato), proporção 4:5 — mínimo 1200 × 1500 px.</li>
+      <li><b>Dica:</b> aproxime-se do objeto; o detalhe deve ocupar quase todo o quadro.</li>
+    </ul>
+  </div>
+
+  <!-- SERVIÇOS -->
+  <div class="card">
+    <h3><span class="num">06</span>Fotos dos 5 serviços <span class="tag">Importante</span></h3>
+    <p class="onde">Seção "Serviços" — cada serviço expande e mostra sua própria imagem</p>
+    <ul class="specs">
+      <li><b>Tipo de foto:</b> HORIZONTAL, proporção 16:10 — mínimo 1600 × 1000 px cada.</li>
+    </ul>
+    <table>
+      <tr><th>#</th><th>Serviço</th><th>Que foto enviar</th></tr>
+      <tr><td>6.1</td><td><b>Construção residencial</b></td><td>Casa ou sobrado (em obra avançada ou concluído)</td></tr>
+      <tr><td>6.2</td><td><b>Empreendimentos comerciais</b></td><td>Edifício corporativo, loja ou galpão construído pela empresa</td></tr>
+      <tr><td>6.3</td><td><b>Reformas &amp; retrofit</b></td><td>Ambiente reformado (ou par antes/depois de uma reforma)</td></tr>
+      <tr><td>6.4</td><td><b>Projetos e gestão de obras</b></td><td>Engenheiro/gestor com tablet, prancheta ou plantas no canteiro</td></tr>
+      <tr><td>6.5</td><td><b>Infraestrutura &amp; áreas externas</b></td><td>Pavimentação, contenção, drenagem ou paisagismo executado</td></tr>
+    </table>
+  </div>
+
+  <!-- PROJETOS -->
+  <div class="card">
+    <h3><span class="num">07</span>Fotos dos projetos (portfólio) <span class="tag">Essencial</span></h3>
+    <p class="onde">Carrossel "Projetos" da home, página Portfólio e página individual de cada obra</p>
+    <ul class="specs">
+      <li><b>Quantidade:</b> idealmente 5–8 fotos por projeto (mínimo absoluto: 3).</li>
+      <li><b>Capa de cada projeto:</b> foto horizontal de boa resolução (mínimo 2000 px de largura) com o assunto centralizado e margens folgadas — ela será recortada em três formatos diferentes pelo site (vertical no carrossel, quadrada no portfólio e panorâmica na página da obra).</li>
+      <li><b>Galeria:</b> fachada, sala/living, cozinha, dormitório, área externa/piscina e closes de acabamento. Proporção 16:10 (horizontais).</li>
+      <li><b>Para obras em execução:</b> fotos do canteiro organizado também são ótimas — mostram método.</li>
+      <li><b>Informe junto:</b> nome da obra, cidade/UF, ano e situação (concluído ou em execução).</li>
+    </ul>
+    <div class="dica"><strong>Nota:</strong> os projetos atualmente no site são fictícios (Residência Horizonte, Edifício Vetra Corporate etc.). Envie os <strong>seus projetos reais</strong> — substituímos os textos e as fotos juntos.</div>
+  </div>
+
+  <!-- DEPOIMENTOS -->
+  <div class="card">
+    <h3><span class="num">08</span>Fotos dos clientes (depoimentos) <span class="tag op">Opcional</span></h3>
+    <p class="onde">Carrossel de depoimentos — aparece como foto redonda ao lado do nome</p>
+    <ul class="specs">
+      <li><b>O que:</b> rosto do cliente que deu o depoimento (pode ser foto de perfil de rede social, desde que nítida).</li>
+      <li><b>Especificação:</b> quadrada, mínimo 400 × 400 px, rosto centralizado.</li>
+      <li><b>Se não tiver:</b> o site exibe apenas o nome — funciona normalmente.</li>
+    </ul>
+  </div>
+
+  <!-- PARCEIROS -->
+  <div class="card">
+    <h3><span class="num">09</span>Logos dos parceiros/fornecedores <span class="tag op">Opcional</span></h3>
+    <p class="onde">Faixa animada "Parceiros" que corre no meio da página</p>
+    <ul class="specs">
+      <li><b>O que:</b> logo de cada parceiro (estruturas, vidraçaria, elétrica, fundações, climatização, paisagismo...).</li>
+      <li><b>Especificação:</b> PNG com fundo transparente, formato horizontal, mínimo 300 px de largura, em versão clara (branca/colorida) — a faixa tem fundo azul-marinho escuro.</li>
+      <li><b>Se não tiver:</b> o site mostra o nome do parceiro em texto — funciona normalmente.</li>
+    </ul>
+  </div>
+
+  <!-- BLOG -->
+  <div class="card">
+    <h3><span class="num">10</span>Capas dos artigos do blog <span class="tag op">Pode ficar para depois</span></h3>
+    <p class="onde">Destaque do blog na home e cabeçalho de cada artigo</p>
+    <ul class="specs">
+      <li><b>Especificação:</b> horizontal, mínimo 1600 × 900 px, relacionada ao tema do artigo (obra, orçamento, manutenção...).</li>
+      <li><b>Alternativa:</b> podemos selecionar imagens de banco gratuito de qualidade — decidimos juntos na hora de escrever os artigos.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== CHECKLIST ===================== -->
+<section>
+  <p class="kicker">Mão na massa</p>
+  <h2>Checklist final para imprimir</h2>
+  <table>
+    <tr><th style="width:42px">☐</th><th>Item</th><th>Qtd.</th><th>Especificação rápida</th></tr>
+    <tr><td>☐</td><td>Logo oficial (fundo escuro + transparente)</td><td>1</td><td>PNG/SVG, ≥ 800 px largura</td></tr>
+    <tr><td>☐</td><td>Ícone (favicon)</td><td>1</td><td>PNG quadrado 512 px</td></tr>
+    <tr><td>☐</td><td>Foto de abertura (hero)</td><td>1</td><td>≥ 1920×1080, assunto à direita</td></tr>
+    <tr><td>☐</td><td>Equipe no canteiro</td><td>1</td><td>Vertical 4:5, ≥ 1200×1500</td></tr>
+    <tr><td>☐</td><td>Detalhe de acabamento</td><td>1</td><td>Vertical 4:5, ≥ 1200×1500</td></tr>
+    <tr><td>☐</td><td>Uma foto por serviço</td><td>5</td><td>Horizontal 16:10, ≥ 1600×1000</td></tr>
+    <tr><td>☐</td><td>Capa de cada projeto real</td><td>±6</td><td>Horizontal, ≥ 2000 px, assunto central</td></tr>
+    <tr><td>☐</td><td>Galeria dos projetos</td><td>±30</td><td>5–8 fotos por obra, 16:10</td></tr>
+    <tr><td>☐</td><td>Dados das obras (nome, cidade, ano, status)</td><td>—</td><td>Lista escrita junto às fotos</td></tr>
+    <tr><td>☐</td><td>Clientes p/ depoimento (foto + frase autorizada)</td><td>3</td><td>Quadrada ≥ 400 px</td></tr>
+    <tr><td>☐</td><td>Logos dos parceiros</td><td>6</td><td>PNG transparente horizontal</td></tr>
+    <tr><td>☐</td><td>Capas do blog</td><td>3</td><td>Horizontal ≥ 1600×900</td></tr>
+  </table>
+</section>
+
+</div>
+
+<footer>
+  <span class="g">WJC Inova</span>
+  Qualquer dúvida sobre enquadramento, é só fotografar mais de uma opção da mesma cena —
+  escolhemos juntos as melhores. Obrigado!
+</footer>
+
+</body>
+</html>
